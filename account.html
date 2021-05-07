@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product - LEGEND STORE | E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- navbar section -->
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px" alt="logo"></a> 
+             </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="add-cart.html"><img src="images/cart.png" alt="" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+      
+    <!-- ---------- account apge ---------- -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login </span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form action="" id="login">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+                        <form action="" id="register">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- ------------ footer ------------ -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ISO mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                    <div class="footer-col-2">
+                         <img src="images/logo-white.png" alt="">
+                        <p>Our Purpose is to sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Link</h3>
+                        <ul>
+                            <li><a href="">Coupone</a></li>
+                            <li><a href="">Blog Post</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Join Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+                            <li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 @Red-Store</p>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- ------------ JS ------------ -->
+
+    <script>
+        var menuitems = document.getElementById('menuitems');
+        menuitems.style.maxHeight = "0px";
+  
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px"
+            }else{
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+
+// ------ js for toogle form -------
+var logi = document.getElementById("login");
+var registe = document.getElementById("register");   
+var indicator = document.getElementById("indicator");
+
+      function register(){
+          registe.style.transform = "translateX(0px)";
+          logi.style.transform = "translateX(0px)";
+          indicator.style.transform = "translateX(100px)";
+      }
+
+      function login(){
+          registe.style.transform = "translateX(300px)";
+          logi.style.transform = "translateX(300px)";
+          indicator.style.transform = "translateX(0px)";
+      }
+
+
+    </script>
+</body>
+</html>

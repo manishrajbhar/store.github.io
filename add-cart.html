@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product - LEGEND STORE | E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- navbar section -->
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt="logo"></a> 
+             </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="add-cart.html"><img src="images/cart.png" alt="" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+          </div>
+      
+     <!-- ---------- car items details ------------ -->
+     <div class="small-container card-page">
+         <table>
+             <tr>
+                 <th>Product</th>
+                 <th>Quantity</th>
+                 <th>Subtotal</th>
+             </tr>
+             <tr>
+                 <td>
+                     <div class="card-info">
+                         <img src="images/buy-1.jpg" alt="">
+                         <div>
+                             <p>Printed Tshirt</p>
+                             <small>Price: Rs 599.</small>
+                             <br>
+                             <a href="">Remove</a>
+                         </div>
+                     </div>
+                 </td>
+                 <td><input type="number" value="1"></td>
+                 <td>Rs 599.</td>
+             </tr>
+             <tr>
+                <td>
+                    <div class="card-info">
+                        <img src="images/buy-2.jpg" alt="">
+                        <div>
+                            <p>HRX Jogging Shose</p>
+                            <small>Price: Rs 1499.</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs 1499.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-info">
+                        <img src="images/buy-3.jpg" alt="">
+                        <div>
+                            <p>Puma Track</p>
+                            <small>Price: Rs 799.</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs 799.</td>
+            </tr>
+         </table>
+         <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs 2897</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rs 49</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs 2946</td>
+                </tr>
+            </table>
+         </div>
+     </div>
+         
+    
+    <!-- ------------ footer ------------ -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ISO mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                    <div class="footer-col-2">
+                         <img src="images/logo-white.png" alt="">
+                        <p>Our Purpose is to sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Link</h3>
+                        <ul>
+                            <li><a href="">Coupone</a></li>
+                            <li><a href="">Blog Post</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Join Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+                            <li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 @Red-Store</p>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- ------------ JS ------------ -->
+
+    <script>
+        var menuitems = document.getElementById('menuitems');
+        menuitems.style.maxHeight = "0px";
+  
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px"
+            }else{
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+
+      
+    </script>
+</body>
+</html>
