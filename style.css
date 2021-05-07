@@ -487,6 +487,7 @@ form a{
         width: 100%;
         overflow: hidden;
         transition: all 0.7s;
+        z-index: 10;
     }
     nav ul li{
         display: block;
